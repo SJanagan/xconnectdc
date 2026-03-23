@@ -4,7 +4,7 @@ import { useState, useEffect, FormEvent } from 'react';
 
 export default function ContactPopup() {
   const [isActive, setIsActive] = useState(false);
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', company: '', service: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
@@ -26,7 +26,7 @@ export default function ContactPopup() {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    if (!formData.email || !formData.name) return;
+    if (!formData.name || !formData.email || !formData.message) return;
 
     setIsSubmitting(true);
     try {
@@ -112,6 +112,47 @@ export default function ContactPopup() {
                   placeholder="+91 XXXXX XXXXX"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                />
+              </div>
+              <div className="xconnect-form-group">
+                <label className="xconnect-label" htmlFor="popup-company">Company</label>
+                <input
+                  id="popup-company"
+                  type="text"
+                  className="xconnect-input"
+                  placeholder="Your company name"
+                  value={formData.company}
+                  onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                />
+              </div>
+              <div className="xconnect-form-group">
+                <label className="xconnect-label" htmlFor="popup-service">Service Interest</label>
+                <select
+                  id="popup-service"
+                  className="xconnect-input"
+                  value={formData.service}
+                  onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                >
+                  <option value="">Select a service</option>
+                  <option value="colocation">Colocation &amp; Hosting</option>
+                  <option value="cloud">Cloud &amp; Managed Services</option>
+                  <option value="opgw">OPGW Connectivity</option>
+                  <option value="network">Network &amp; Interconnection</option>
+                  <option value="dr">Disaster Recovery</option>
+                  <option value="security">Security &amp; Compliance</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div className="xconnect-form-group">
+                <label className="xconnect-label" htmlFor="popup-message">Message *</label>
+                <textarea
+                  id="popup-message"
+                  className="xconnect-input"
+                  rows={3}
+                  placeholder="Tell us about your requirements..."
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  required
                 />
               </div>
               <div style={{ display: 'flex', gap: '0.75rem' }}>
