@@ -100,6 +100,12 @@
       }
     }
 
+    @media (min-width: 1200px) {
+      .xconnect-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
     /* Service Block */
     .xconnect-service-block {
       background-color: var(--color-white, #ffffff);
@@ -206,11 +212,11 @@
         <div class="xconnect-services-hero__content">
           <div class="xconnect-services-hero__badge" data-aos="fade-up">Our Services</div>
           <h1 class="xconnect-services-hero__title" data-aos="fade-up" data-aos-delay="100">
-            Enterprise Infrastructure<br>
-            <span class="xconnect-services-hero__title-highlight">Solutions That Scale</span>
+            Complete Infrastructure<br>
+            <span class="xconnect-services-hero__title-highlight">Solutions for Every Business</span>
           </h1>
           <p class="xconnect-services-hero__text" data-aos="fade-up" data-aos-delay="200">
-            From world-class data centers to high-speed connectivity, we deliver the infrastructure your business needs to thrive in the digital age.
+            We provide a complete portfolio of modern infrastructure solutions built for performance, simplicity, and reliability — from data centers and cloud to GPU computing, telecom, and networking.
           </p>
         </div>
       </div>
@@ -226,56 +232,146 @@
                 <path d="M88,88a8,8,0,0,1,8-8h64a8,8,0,0,1,0,16H96A8,8,0,0,1,88,88Zm8,40h64a8,8,0,0,0,0-16H96a8,8,0,0,0,0,16ZM232,56V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56ZM40,152H216V56H40Zm0,48H216V168H40Z"></path>
               </svg>
             </div>
-            <h2 class="xconnect-service-block__title">Data Center Solutions</h2>
+            <h2 class="xconnect-service-block__title">Data Center Services</h2>
             <p class="xconnect-service-block__text">
-              State-of-the-art Tier III+ data center facilities designed for maximum reliability, security, and efficiency. Our 50MW capacity data centers provide the foundation for your digital infrastructure.
+              Secure and scalable hosting, tailored for business growth. Our capabilities deliver high-availability infrastructure without the cost of building your own facilities.
             </p>
             <ul class="xconnect-service-block__features">
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>99.999% uptime SLA guarantee</span>
+                <span>High-availability colocation services</span>
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>N+1 redundant power and cooling</span>
+                <span>Dedicated racks, cages, and private suites</span>
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>24/7 on-site security and monitoring</span>
+                <span>Power-redundant, climate-controlled environments</span>
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>Flexible colocation options</span>
+                <span>24/7 monitoring, security, and cross-connect services</span>
               </li>
             </ul>
           </div>
 
-          <div class="xconnect-service-block" id="opgw" data-aos="fade-up" data-aos-delay="100">
+          <div class="xconnect-service-block" id="cloud" data-aos="fade-up" data-aos-delay="100">
             <div class="xconnect-service-block__icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 256 256">
-                <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm40-104H136V72a8,8,0,0,0-16,0v48a8,8,0,0,0,8,8h40a8,8,0,0,0,0-16Z"></path>
+                <path d="M160,40A88.09,88.09,0,0,0,81.29,88.67,64,64,0,1,0,72,216h88a88,88,0,0,0,0-176Zm0,160H72a48,48,0,0,1,0-96h4a88.09,88.09,0,0,0-.79,12,87.62,87.62,0,0,0,1.44,16H72a32,32,0,0,0,0,64h88a72,72,0,1,1,0-144,72,72,0,0,1,0,144Z"></path>
               </svg>
             </div>
-            <h2 class="xconnect-service-block__title">OPGW Connectivity</h2>
+            <h2 class="xconnect-service-block__title">Cloud Solutions</h2>
             <p class="xconnect-service-block__text">
-              Leverage our extensive 14,941 km fiber network spanning 13 districts with 28.8 Tbps capacity. Our OPGW infrastructure provides ultra-reliable, high-speed connectivity for mission-critical applications.
+              Modern cloud services that match your business needs. Whether you're scaling applications, optimizing cost, or deploying new workloads — we ensure a smooth, reliable cloud journey.
             </p>
             <ul class="xconnect-service-block__features">
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>14,941 km fiber optic network</span>
+                <span>Public, private, and hybrid cloud design</span>
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>28.8 Tbps total network capacity</span>
+                <span>Cloud migration strategy and deployment</span>
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>Coverage across 13 districts</span>
+                <span>Cloud cost optimization</span>
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>Dark fiber and lit services available</span>
+                <span>Edge cloud and distributed computing</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="xconnect-service-block" id="gpu" data-aos="fade-up" data-aos-delay="200">
+            <div class="xconnect-service-block__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M232,128a8,8,0,0,1-8,8H204.94l-37.78,75.58A8,8,0,0,1,160,216h-.4a8,8,0,0,1-7.08-5.14L95.35,60.76,63.28,131.31A8,8,0,0,1,56,136H24a8,8,0,0,1,0-16H50.85L88.72,36.69a8,8,0,0,1,14.76.46l57.51,151,31.85-63.72A8,8,0,0,1,200,120h24A8,8,0,0,1,232,128Z"></path>
+              </svg>
+            </div>
+            <h2 class="xconnect-service-block__title">GPU / High-Performance Compute</h2>
+            <p class="xconnect-service-block__text">
+              Accelerate AI, machine learning, and compute-intensive workloads with powerful GPU infrastructure. Perfect for organizations working on AI, deep learning, simulations, and large-scale compute tasks.
+            </p>
+            <ul class="xconnect-service-block__features">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                <span>On-demand GPU clusters</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                <span>AI/ML model training and inference</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                <span>High-performance computing as a service</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                <span>Scalable GPU resources for research and analytics</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="xconnect-service-block" id="detection" data-aos="fade-up" data-aos-delay="0">
+            <div class="xconnect-service-block__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M208,40H48A16,16,0,0,0,32,56v58.78c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56H208Z"></path>
+              </svg>
+            </div>
+            <h2 class="xconnect-service-block__title">Data Detection &amp; Intelligence</h2>
+            <p class="xconnect-service-block__text">
+              Protect and understand your data with advanced detection tools. Businesses can strengthen security posture and ensure sensitive data is always protected.
+            </p>
+            <ul class="xconnect-service-block__features">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                <span>Data security and compliance checks</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                <span>Monitoring and anomaly detection</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                <span>Threat visibility for cloud and on-prem environments</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                <span>Identity-based access insights</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="xconnect-service-block" id="telecom" data-aos="fade-up" data-aos-delay="100">
+            <div class="xconnect-service-block__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M188.44,220a8,8,0,0,1-6.89-3.94L128,126.13l-53.55,89.93a8,8,0,0,1-13.8-8.12L128,96.13l67.35,111.81a8,8,0,0,1-6.91,12.06ZM128,88a40,40,0,1,0-40-40A40,40,0,0,0,128,88Zm0-64a24,24,0,1,1-24,24A24,24,0,0,1,128,24Z"></path>
+              </svg>
+            </div>
+            <h2 class="xconnect-service-block__title">Telecom &amp; VOIP Solutions</h2>
+            <p class="xconnect-service-block__text">
+              Powerful communication and wireless infrastructure for business operations. Keep your teams connected — anywhere, anytime with our telecom and VoIP solutions.
+            </p>
+            <ul class="xconnect-service-block__features">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                <span>4G/5G network deployment and private wireless</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                <span>Hosted VoIP, PBX, and SIP trunking</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                <span>Secure voice, messaging, and video collaboration</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+                <span>Microwave, fiber, and backhaul solutions</span>
               </li>
             </ul>
           </div>
@@ -286,56 +382,26 @@
                 <path d="M232,128a8,8,0,0,1-8,8H204.94l-37.78,75.58A8,8,0,0,1,160,216h-.4a8,8,0,0,1-7.08-5.14L95.35,60.76,63.28,131.31A8,8,0,0,1,56,136H24a8,8,0,0,1,0-16H50.85L88.72,36.69a8,8,0,0,1,14.76.46l57.51,151,31.85-63.72A8,8,0,0,1,200,120h24A8,8,0,0,1,232,128Z"></path>
               </svg>
             </div>
-            <h2 class="xconnect-service-block__title">Network Infrastructure</h2>
+            <h2 class="xconnect-service-block__title">Networking Solutions</h2>
             <p class="xconnect-service-block__text">
-              Enterprise-grade networking solutions including SD-WAN, MPLS, and dedicated circuits. Our network infrastructure ensures seamless connectivity for your business operations.
+              Build a solid foundation for business connectivity. We create fast, reliable networks that scale with your business through expert design and optimization.
             </p>
             <ul class="xconnect-service-block__features">
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>SD-WAN and MPLS solutions</span>
+                <span>SD-WAN, MPLS, and enterprise routing</span>
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>Dedicated internet access (DIA)</span>
+                <span>Network design and optimization</span>
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>Private line and ethernet services</span>
+                <span>Secure Wi-Fi and LAN deployments</span>
               </li>
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>Multi-carrier connectivity options</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="xconnect-service-block" id="managed" data-aos="fade-up" data-aos-delay="300">
-            <div class="xconnect-service-block__icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 256 256">
-                <path d="M160,40A88.09,88.09,0,0,0,81.29,88.67,64,64,0,1,0,72,216h88a88,88,0,0,0,0-176Zm0,160H72a48,48,0,0,1,0-96h4a88.09,88.09,0,0,0-.79,12,87.62,87.62,0,0,0,1.44,16H72a32,32,0,0,0,0,64h88a72,72,0,1,1,0-144,72,72,0,0,1,0,144Z"></path>
-              </svg>
-            </div>
-            <h2 class="xconnect-service-block__title">Managed Services</h2>
-            <p class="xconnect-service-block__text">
-              24/7 NOC monitoring, proactive maintenance, and expert support to keep your infrastructure running smoothly. Let our team handle the complexity while you focus on your business.
-            </p>
-            <ul class="xconnect-service-block__features">
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>24/7 Network Operations Center</span>
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>Proactive monitoring and alerting</span>
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>Incident response and resolution</span>
-              </li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-                <span>Dedicated account management</span>
+                <span>Multi-site connectivity and redundancy</span>
               </li>
             </ul>
           </div>
