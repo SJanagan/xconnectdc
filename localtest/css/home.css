@@ -388,7 +388,7 @@
 
 @media (min-width: 1024px) {
     .xconnect-what-we-do__grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: var(--spacing-8, 2rem);
     }
 }
