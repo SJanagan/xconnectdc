@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import Image from 'next/image';
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,12 +12,10 @@ export default function Footer() {
           <div className="xconnect-footer__grid">
             <div className="xconnect-footer__col xconnect-footer__col--brand">
               <Link href="/" className="xconnect-footer__logo" aria-label="XConnectDC Home">
-                <Image
-                  src="/images/client_logo_final.svg"
+                <img
+                  src={`${basePath}/images/client_logo_final.svg`}
                   alt="XConnectDC Logo"
                   className="xconnect-footer__logo-img"
-                  width={160}
-                  height={60}
                   style={{ objectFit: 'contain', maxWidth: '160px', height: 'auto' }}
                 />
               </Link>

@@ -2,8 +2,9 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -64,21 +65,19 @@ export default function Header() {
           <div className="xconnect-container">
             <nav className="xconnect-nav">
               <Link href="/" className="xconnect-logo" aria-label="XConnectDC Home">
-                <Image
-                  src="/images/logo.svg"
+                <img
+                  src={`${basePath}/images/logo.svg`}
                   alt="XConnectDC Logo"
                   className="xconnect-logo__image xconnect-logo__image--light"
                   width={180}
                   height={45}
-                  priority
                 />
-                <Image
-                  src="/images/logo-dark.svg"
+                <img
+                  src={`${basePath}/images/logo-dark.svg`}
                   alt="XConnectDC Logo"
                   className="xconnect-logo__image xconnect-logo__image--dark"
                   width={180}
                   height={45}
-                  priority
                 />
               </Link>
 
