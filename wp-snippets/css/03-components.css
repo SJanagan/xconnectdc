@@ -68,14 +68,17 @@
 }
 
 .xconnect-logo__image {
-  height: 40px;
+  height: 45px;
   width: auto;
+  max-height: 100%;
+  object-fit: contain;
   transition: all var(--transition-base, 250ms ease);
 }
 
-/* Logo swap on scroll - show light logo by default, dark when scrolled */
+/* Logo swap on scroll - show light (white) logo by default, dark when scrolled */
 .xconnect-logo__image--light {
   display: block;
+  filter: brightness(0) invert(1);
 }
 
 .xconnect-logo__image--dark {
@@ -91,7 +94,7 @@
 }
 
 .xconnect-header.is-scrolled .xconnect-logo__image {
-  height: 36px;
+  height: 38px;
 }
 
 /* Navigation Menu */
@@ -344,8 +347,11 @@ body.mobile-menu-open {
 }
 
 .xconnect-footer__logo-img {
-  height: 40px;
+  height: 60px;
   width: auto;
+  max-width: 240px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .xconnect-footer__description {
