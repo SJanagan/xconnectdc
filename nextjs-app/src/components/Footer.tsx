@@ -13,10 +13,9 @@ export default function Footer() {
             <div className="xconnect-footer__col xconnect-footer__col--brand">
               <Link href="/" className="xconnect-footer__logo" aria-label="XConnectDC Home">
                 <img
-                  src={`${basePath}/images/client_logo_final.svg`}
+                  src={`${basePath}/images/client_logo.svg`}
                   alt="XConnectDC Logo"
                   className="xconnect-footer__logo-img"
-                  style={{ objectFit: 'contain', maxWidth: '160px', height: 'auto' }}
                 />
               </Link>
               <p className="xconnect-footer__description">

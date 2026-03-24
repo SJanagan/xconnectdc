@@ -66,18 +66,14 @@ export default function Header() {
             <nav className="xconnect-nav">
               <Link href="/" className="xconnect-logo" aria-label="XConnectDC Home">
                 <img
-                  src={`${basePath}/images/logo.svg`}
+                  src={`${basePath}/images/logo_resized.svg`}
                   alt="XConnectDC Logo"
                   className="xconnect-logo__image xconnect-logo__image--light"
-                  width={180}
-                  height={45}
                 />
                 <img
-                  src={`${basePath}/images/logo-dark.svg`}
+                  src={`${basePath}/images/logo_resized.svg`}
                   alt="XConnectDC Logo"
                   className="xconnect-logo__image xconnect-logo__image--dark"
-                  width={180}
-                  height={45}
                 />
               </Link>
 
